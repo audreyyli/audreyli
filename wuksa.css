@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('Fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('Fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C7C7C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.transition-wrapper {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.container {
+    width: 1300px;
+    height: 4338px;
+    background-color: #E1E1E1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Container */
+.header-container {
+    width: 905px;
+    height: 54px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 194px;
+}
+
+.header-link {
+    position: absolute;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    font-weight: bold;
+}
+
+/* "AUDREY" link styles */
+.header-link.audrey {
+    position: absolute;
+    top: 19px;
+    left: 30px;
+}
+
+/* "GRAPHICS" link styles */
+.header-link.graphics {
+    position: absolute;
+    font-weight: bold;
+    top: 19px;
+    left: 727px;
+}
+
+/* "PROJECTS" link styles */
+.header-link.projects {
+    position: absolute;
+    top: 19px;
+    left: 839px;
+}
+
+/* "RESUME" button styles */
+.resume-button {
+    width: 118px;
+    height: 37px;
+    line-height: 37px;
+    background-color: #F5F5F5;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    top: 8.5px;
+    right: 30px;
+    border: 1px solid #5D5D5D;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #000;
+    color: #F5F5F5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Body Container */
+.body-container {
+    width: 1100px;
+    height: 470px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 95px;
+}
+
+h1 {
+    font-size: 13em;
+    letter-spacing: -14px;
+    font-weight: bold;
+    font-family: 'League Spartan', Arial, sans-serif;
+    top: -10px;
+    position: relative;
+}
+
+.body-container p {
+    text-align: center;
+    padding: 0 13%;
+    position: relative;
+    top: -188px;
+}
+
+.list {
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #5D5D5D;
+    text-align: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list:hover {
+    background-color: #000;
+    color: #F5F5F5;
+}
+
+.wuksa {
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+    top: -160px;
+}
+
+.wai {
+    top: -150px;
+}
+
+.wega {
+    top: -140px;
+}
+
+.grc {
+    top: -130px;
+}
+
+.line {
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 15px;
+    top: 620px;
+    left: 102px;
+}
+
+.subheader {
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    top: 607px;
+    left: 160px;
+}
+
+.subp {
+    text-align: left;
+    padding: 0 13%;
+    position: relative;
+    left: -10px;
+    top: 643px;
+}
+
+/* Picture Containers */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 10px;
+    justify-content: left;
+    position: absolute;
+    width: 1100px;
+    top: 710px;
+}
+
+.pic-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 505px;
+    height: 550px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.pic-containers img {
+    width: calc(100% - 10px);
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Graphics Info */
+.pic-containers .h {
+    font-family: 'Inter', Arial, sans-serif;
+    align-self: flex-start;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.pic-containers .data-type {
+    font-family: 'Inter', Arial, sans-serif;
+    align-self: flex-start;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: -4px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* Footer Container */
+.footer-container {
+    width: 1078px;
+    height: 37px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 30px;
+}

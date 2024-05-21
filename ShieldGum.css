@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('Fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('Fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C7C7C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.transition-wrapper {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.container {
+    width: 1300px;
+    height: 2420px;
+    background-color: #E1E1E1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Container */
+.header-container {
+    width: 905px;
+    height: 54px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 194px;
+}
+
+.header-link {
+    position: absolute;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    font-weight: bold;
+}
+
+/* "AUDREY" link styles */
+.header-link.audrey {
+    position: absolute;
+    top: 19px;
+    left: 30px;
+}
+
+/* "GRAPHICS" link styles */
+.header-link.graphics {
+    position: absolute;
+    top: 19px;
+    left: 727px;
+}
+
+/* "PROJECTS" link styles */
+.header-link.projects {
+    position: absolute;
+    font-weight: bold;
+    top: 19px;
+    left: 839px;
+}
+
+/* "RESUME" button styles */
+.resume-button {
+    width: 118px;
+    height: 37px;
+    line-height: 37px;
+    background-color: #F5F5F5;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    top: 8.5px;
+    right: 30px;
+    border: 1px solid #5D5D5D;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #000;
+    color: #F5F5F5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.pic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 505px;
+    height: 505px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    left: 101px;
+}
+
+.pic-container img {
+    width: calc(100% - 10px);
+    height: auto;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 495px;
+    height: 360px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    right: 101px;
+}
+
+.title-container .title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    margin-left: 10px;
+}
+
+.title-container .subtitle {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.title-container .sub {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.title-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.title-container td {
+    padding: 9px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.title-container td:first-child {
+    color: #717171;
+}
+
+.challenge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1059px;
+    height: 118px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 665px;
+    left: 101px;
+}
+
+.challenge-container .title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-left: 8px;
+}
+
+.challenge-container .paragraph {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #717171;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.approach-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1059px;
+    height: 315px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 845px;
+    left: 101px;
+}
+
+.approach-container .title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-left: 8px;
+}
+
+.approach-container .subheader {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.approach-container .details {
+    color: #717171;
+    margin-left: 45px;
+    font-size: 1em;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1059px;
+    height: 118px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 1225px;
+    left: 101px;
+}
+
+.results-container .title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-left: 8px;
+}
+
+.results-container .paragraph {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #717171;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1059px;
+    height: 830px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 1410px;
+    left: 101px;
+}
+
+.screen-container img {
+    width: calc(100% - 10px);
+    height: auto;
+}
+
+.previous-button {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+    top: 2295px;
+    left: 101px;
+    text-decoration: none;
+    position: absolute;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.previous-button:hover {
+    background-color: #E1E1E1;
+    color: #000;
+}
+
+.next-button {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #000;
+    color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+    top: 2295px;
+    right: 101px;
+    text-decoration: none;
+    position: absolute;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #E1E1E1;
+    color: #000;
+}
+
+/* Footer Container */
+.footer-container {
+    width: 1078px;
+    height: 37px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 30px;
+}
